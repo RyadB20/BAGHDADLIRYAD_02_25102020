@@ -1,0 +1,66 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* CSS Reset pour qu'aucun navigateur n'applique de réglages préalables de mise en page */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F2F2F2;
+}
+
+/* Header en Flexbox */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logom {
+    padding: 5px;
+}
+
+.topmenu {
+    display: flex;
+    list-style-type: none;
+}
+
+.topmenu li {
+    margin-left: 15px;
+    font-size: large;
+    padding: 20px;
+}
+
+.topmenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.topmenu li:hover {
+    border-top: solid;
+    border-color: #0065FC;
+}
+
+.topmenu li a:hover {
+    color: #0065FC;
+}
+.topmenu .sub {
+    color: #0065FC;
+    font-weight: bold;
+}
