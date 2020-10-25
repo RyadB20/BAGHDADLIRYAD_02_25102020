@@ -22,7 +22,10 @@ time, mark, audio, video {
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #F2F2F2;
+}
+
+p {
+    font-size: small;
 }
 
 /* Header en Flexbox */
@@ -30,10 +33,11 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .logom {
-    padding: 5px;
+    padding-top: 20px;
 }
 
 .topmenu {
@@ -43,8 +47,10 @@ header {
 
 .topmenu li {
     margin-left: 15px;
-    font-size: large;
-    padding: 20px;
+    padding-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
 }
 
 .topmenu li a {
@@ -64,3 +70,85 @@ header {
     color: #0065FC;
     font-weight: bold;
 }
+
+/* Accueil barre de recherche */
+
+.intro {
+    line-height: 1.6;
+}
+
+button {
+    background-color: white;
+}
+
+.sbutton {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+
+#city {
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.rbutton {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #0065FC;
+    border: transparent;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: -5px;
+}
+
+/* Filtres */
+
+.filters {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+h2 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fbutton {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 10px;
+    border: 1px solid;
+    border-color: #F2F2F2;
+    border-radius: 40px;
+    font-weight: bolder;
+}
+
+.filters i {
+    color: #0065FC;
+    border: 1px solid;
+    border-color: #F2F2F2;
+    border-radius: 40px;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.fa-info-circle {
+    color: white;
+    background-color: #0065FC;
+    border: 1px solid;
+    border-color: #F2F2F2;
+    border-radius: 25px;
+}
+
