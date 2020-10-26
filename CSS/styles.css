@@ -22,6 +22,8 @@ time, mark, audio, video {
 
 body {
     font-family: 'Raleway', sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 p {
@@ -37,7 +39,7 @@ header {
 }
 
 .logom {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .topmenu {
@@ -47,7 +49,7 @@ header {
 
 .topmenu li {
     margin-left: 15px;
-    padding-top: 35px;
+    padding-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 15px;
@@ -77,43 +79,47 @@ header {
     line-height: 1.6;
 }
 
-button {
-    background-color: white;
-}
-
 .sbutton {
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 5px;
+    padding: 11px 15px 11px 15px;
+    margin-right: -5px;
+    color: initial;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #city {
-    border: none;
+    border: 1px solid;
+    border-color: #F2F2F2;
     padding: 10px;
     margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .rbutton {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 11px;
     color: white;
     font-weight: bold;
     background-color: #0065FC;
     border: transparent;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin-left: -5px;
+    margin-left: -4px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.rbutton:hover {
+    color: #F2F2F2;
 }
 
 /* Filtres */
 
 .filters {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     align-items: center;
 }
 
@@ -127,21 +133,30 @@ h2 {
     align-items: center;
     margin-left: 15px;
     padding-top: 0;
+    padding-bottom: 0;
     padding-left: 0;
-    padding-right: 10px;
+    padding-right: 20px;
     border: 1px solid;
     border-color: #F2F2F2;
-    border-radius: 40px;
+    border-radius: 30px;
     font-weight: bolder;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fbutton:hover {
+    color: white;
+    background-color: #0065FC;
 }
 
 .filters i {
     color: #0065FC;
-    border: 1px solid;
-    border-color: #F2F2F2;
-    border-radius: 40px;
-    padding: 15px;
-    margin-right: 10px;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #DEEBFF;
 }
 
 .fa-info-circle {
@@ -152,3 +167,206 @@ h2 {
     border-radius: 25px;
 }
 
+.mark {
+    margin-bottom: 30px;
+}
+
+/* Articles les plus populaires */
+
+.populaire {
+    width: 25%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.tpop {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+
+.artpop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artpop article {
+    width: 100%;
+    height: 150px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid;
+    border-color: #f2f2f2;
+    box-shadow: 3px 3px 20px lightgrey;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.imgp {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+.artpop article a {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.textp {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    height: 100%;
+}
+
+
+
+/* Hébergements */
+
+
+.heberge {
+    background-color: #F2F2F2;
+    width: 65%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.hebergements {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.hebergements article {
+    width: 28%;
+    height: 215px;
+    margin: 15px 15px 15px 0px;
+    border-radius: 35px;
+    padding: 5px;
+    border: 2px solid;
+    border-color: #F2F2F2;
+    box-shadow: 3px 3px 20px lightgrey;
+    background-color: white;
+}
+
+.texth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    height: 40%;
+}
+
+
+.imgh {
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.plus {
+    margin: 10px;
+}
+
+
+
+/* Proportion, couleurs... des titres et paragraphes des articles */
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.empty {
+    color: #f2f2f2;
+
+}
+
+/* Activités à Marseille */
+
+.activites {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.actim {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.act1 {
+    width: 22%;
+    height: 45%;
+    box-shadow: 3px 3px 20px lightgrey;
+    border-radius: 30px;
+}
+
+.act2 {
+    width: 22%;
+    height: 100%;
+    box-shadow: 3px 3px 20px lightgrey;
+    border-radius: 30px;
+}
+
+.act3 {
+    width: 22%;
+    height: 50%;
+    box-shadow: 3px 3px 20px lightgrey;
+    border-radius: 30px;
+}
+.act4{
+    width: 22%;
+    height: 40%;
+    box-shadow: 3px 3px 20px lightgrey;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.act5 {
+    width: 22%;
+    height: 45%;
+    box-shadow: 3px 3px 20px lightgrey;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.actim h4 {
+
+}
+
+.imga, .imga2 {
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
