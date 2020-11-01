@@ -19,13 +19,13 @@
             </a>
 
             
-            <nav>
-                <ul class="top-menu">
-                    <li><a href="" class="nav1">Hébergements</a></li>
-                    <li><a href="" class="nav1">Activités</a></li>
-                    <li><a href="" class="subscribe">S'inscrire</a></li>
+            <nav class="top-menu">
+                <ul>
+                    <li><a href="">Hébergements</a></li>
+                    <li><a href="">Activités</a></li>
                 </ul>
             </nav>
+            <a href="" class="subscribe">S'inscrire</a>
         
         </header>
 
@@ -34,10 +34,14 @@
         <section class="intro">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
+
+            <div class="search-toggle">
             <button class="map-button" type="button"><i class="fas fa-map-marker-alt fa-lg"></i></button>
             <input type="text" id="city" city="city" requiered minlength="0" maxlength="32" size="18" />
             <button class="search-button">Rechercher</button>
             <button class="mobile-search"><i class="fas fa-search"></i></button>
+            </div>
+
         </section>
         
         <!--Les Filtres-->
@@ -125,7 +129,6 @@
 
         <section class="heberge-cadre">
         <h3>Hébergements à Marseille</h3>
-
         <div class="hebergements">
             <article>
                 <a href=""><img class="img-hebergements" src="CSS/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image auberge la cannebiere"></a>

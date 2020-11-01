@@ -32,11 +32,11 @@ li {
     list-style-type: none;
 }
 
-/* Header en Flexbox */
+/* Header */
 
 header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     margin-bottom: 25px;
     margin-left: 15px;
     margin-right: 15px;
@@ -47,9 +47,14 @@ header {
 }
 
 .top-menu {
-    display: flex;
+    width: 90%;
 }
 
+.top-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
 .top-menu li {
     margin-left: 15px;
     padding-top: 30px;
@@ -72,10 +77,14 @@ header {
     color: #0065FC;
 }
 
-.top-menu .subscribe {
+.subscribe {
     color: #0065FC;
     font-weight: bold;
-
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    padding-top: 30px;
+    margin-right: 15px;
+    position: right;
 }
 
 /* Accueil barre de recherche */
@@ -433,7 +442,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-left: 15px;
+    margin-left: 30px;
     padding-top: 40px;
 }
 
@@ -454,39 +463,11 @@ h5 {
     color: #0065FC;
 }
 
-/* Responsive Mobile */
 
-@media all and (max-width: 812px) {
-    
 
-    header {
-        display: flex;
-        flex-wrap: wrap;
-    }
+/* Responsive < 1100px */
 
-    .subscribe {
-        display: block;
-        float: right;
-    }
-
-    .mobile-search {
-        display: flex;
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        color: white;
-        font-weight: bold;
-        background-color: #0065FC;
-        border: transparent;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        margin-left: -5px;
-    }
-
-    .search-button {
-        display: none;
-    }
+@media all and (max-width: 1100px) {
 
     h2 {
         margin-bottom: 15px;
@@ -499,13 +480,24 @@ h5 {
 
     .filters-section {
         display: flex;
-        flex-wrap: wrap;   
+        flex-wrap: wrap; 
+    }
+
+    .filters-button {
+        margin-bottom: 10px;
+    }
+
+    h3{
+        font-size: large;
     }
 
     .populaire {
-        display: flex;
-        width: auto;
+        width: 90%;
         margin-bottom: 30px;
+        display: block;
+        padding-left: 80px;
+        margin-right: 0;
+        border-radius: 0;
     }
 
     .title-populaire {
@@ -519,6 +511,7 @@ h5 {
     .heberge-cadre {
         width: 100%;
         margin-left: 0;
+        background-color: white;
     }
     
     .hebergements {
@@ -540,8 +533,10 @@ h5 {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 1200px;
-        margin-left: 15px;
+        height: 1300px;
+        margin-left: 20px;
+        margin-bottom: 80px;
+        background-color: white;
     }
     .acti-articles {
         display: flex;
@@ -553,12 +548,19 @@ h5 {
     .act1, .act2, .act3, .act4, .act5 {
         width: 90%;
         height: auto;
-        margin: 0px 0px 10px 0px;
+        margin: 0px 0px 15px 0px;
     }
 
     .img-activites, .img-activites2 {
         height: 150px;
     }
+
+    .acti-articles h4 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 15px;
+}
 
     footer {
         width: 100%;
@@ -574,5 +576,61 @@ h5 {
 
     .footert {
         margin-bottom: 30px;
+    }
+}
+
+
+
+
+/* Responsive < 450px */
+
+@media all and (max-width: 450px) {
+    .search-toggle {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .mobile-search {
+        display: flex;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        background-color: #0065FC;
+        border: transparent;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-left: -5px;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+
+    .map-button, .mobile-search {
+        height: fit-content;
+    }
+
+    #city {
+        margin: 0;
+    }
+
+    .title-populaire{
+        margin-left: 10px;
+    }
+
+    .article-populaire {
+        margin-left: 15px;
+    }
+
+    .acti-articles h4 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 15px;
     }
 }
