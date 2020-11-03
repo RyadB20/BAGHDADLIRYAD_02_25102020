@@ -36,6 +36,7 @@ li {
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
     margin-left: 15px;
@@ -48,13 +49,12 @@ header {
 }
 
 .top-menu {
-    width: 90%;
+    display: flex;
 }
 
 .top-menu ul {
     display: flex;
     justify-content: flex-end;
-    margin-right: 20px;
 }
 .top-menu li {
     margin-left: 15px;
@@ -78,14 +78,10 @@ header {
     color: #0065FC;
 }
 
-.subscribe {
+#subscribe {
     color: #0065FC;
     font-weight: bold;
     text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    padding-top: 30px;
-    margin-left: 10px;
-    position: right;
 }
 
 /* Accueil barre de recherche */
@@ -159,13 +155,12 @@ h2 {
     display: flex;
     align-items: center;
 }
+
 .filters-button {
     display: flex;
     align-items: center;
     margin-left: 15px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
+    padding-left: 0px;
     padding-right: 20px;
     border: 1px solid;
     border-color: #F2F2F2;
@@ -182,13 +177,15 @@ h2 {
 }
 
 .filters i {
+    object-fit: cover;
     color: #0065FC;
     border: none;
     border-radius: 30px;
-    padding: 20px;
+    padding: 15px;
     margin-right: 20px;
     background-color: #DEEBFF;
 }
+
 
 .fa-info-circle {
     color: white;
@@ -278,7 +275,7 @@ h2 {
     width: 65%;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 20px;
+    padding-left: 30px;
     border-radius: 20px;
     margin-left: 15px;
 }
@@ -287,7 +284,6 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -356,7 +352,7 @@ h4 {
 .activites {
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 30px;
+    margin-left: 15px;
     height: auto;
 }
 
@@ -601,10 +597,10 @@ h5 {
     .nav1, .nav2 {
         width: 50%;
     }
-    
-    .subscribe {
+
+    #subscribe {
         display: block;
-        float: right;
+        align-self: flex-start;
     }
 
     .search-toggle {
