@@ -272,7 +272,7 @@ h2 {
 
 .heberge-cadre {
     background-color: #F2F2F2;
-    width: 65%;
+    width: 60%;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -545,7 +545,7 @@ h5 {
     .act1, .act2, .act3, .act4, .act5 {
         width: 90%;
         height: auto;
-        margin: 0px 0px 15px 0px;
+        margin: 0px 0px 20px 0px;
     }
 
     .img-activites, .img-activites2 {
@@ -586,13 +586,8 @@ h5 {
     header {
         display: flex;
         flex-wrap: wrap;
-        justify-content: left;
     }
 
-    .topmenu {
-        display: block;
-        margin: 0;
-    }
 
     .nav1, .nav2 {
         width: 50%;
@@ -643,6 +638,10 @@ h5 {
 
     .article-populaire {
         margin-left: 15px;
+    }
+
+    .heberge-cadre {
+        padding-left: 15px;
     }
 
     .acti-articles h4 {
