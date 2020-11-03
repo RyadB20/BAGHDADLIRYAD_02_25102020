@@ -76,6 +76,11 @@ header {
     border-color: #0065FC;
 }
 
+.subscribe:hover {
+    border-top: solid;
+    border-color: #0065FC;
+}
+
 .top-menu li a:hover {
     color: #0065FC;
 }
