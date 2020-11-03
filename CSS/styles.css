@@ -165,7 +165,6 @@ h2 {
     border: 1px solid;
     border-color: #F2F2F2;
     border-radius: 30px;
-    font-weight: bolder;
     background-color: white;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
@@ -177,7 +176,6 @@ h2 {
 }
 
 .filters i {
-    object-fit: cover;
     color: #0065FC;
     border: none;
     border-radius: 30px;
