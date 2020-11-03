@@ -50,11 +50,13 @@ header {
 
 .top-menu {
     display: flex;
+    align-items: center;
 }
 
 .top-menu ul {
     display: flex;
     justify-content: flex-end;
+    width: 90%;
 }
 .top-menu li {
     margin-left: 15px;
@@ -78,10 +80,15 @@ header {
     color: #0065FC;
 }
 
-#subscribe {
+.subscribe {
     color: #0065FC;
     font-weight: bold;
     text-decoration: none;
+    margin-left: 15px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
 }
 
 /* Accueil barre de recherche */
@@ -179,7 +186,7 @@ h2 {
     color: #0065FC;
     border: none;
     border-radius: 30px;
-    padding: 15px;
+    padding: 20px ;
     margin-right: 20px;
     background-color: #DEEBFF;
 }
@@ -226,7 +233,7 @@ h2 {
 }
 
 .article-populaire article {
-    width: 100%;
+    width: 95%;
     height: 150px;
     margin: 10px;
     padding: 5px;
@@ -258,9 +265,16 @@ h2 {
     padding-left: 10px;
     height: 100%;
 }
+.text-populaire p {
+    margin-top: 10px;
+}
+
+.text-populaire h4 {
+    margin-top: 5px;
+}
 
 .stars-populaire {
-    margin-top: 80px;
+    margin-top: 65px;
 }
 
 
@@ -413,6 +427,7 @@ h4 {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
+
 .img-activites2 {
     object-fit: cover;
     width: 100%;
@@ -584,17 +599,52 @@ h5 {
     header {
         display: flex;
         flex-wrap: wrap;
+        margin: 0;
     }
 
+    .logo-reservia {
+        margin-left: 15px;
+    }
 
-    .nav1, .nav2 {
+    .top-menu {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .top-menu ul {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .top-menu li {
         width: 50%;
+        margin: 0px;
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid;
+        border-color: #DEEBFF;
     }
 
-    #subscribe {
-        display: block;
-        align-self: flex-start;
+    .top-menu li a {
+        line-height: 40px;
     }
+
+    .subscribe {
+        position: absolute;
+        right: 10px;
+        top: 2px;
+    }
+
+    .top-menu li:hover {
+        border-bottom: 2px solid;
+        border-color: #0065FC;
+        border-top: none;
+    }
+
+    .top-menu li a:hover {
+    color: #0065FC;
+}
 
     .search-toggle {
         display: flex;
