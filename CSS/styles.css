@@ -214,9 +214,9 @@ h2 {
     display: flex;
     flex-direction: column;
     float: right;
-    padding: 30px;
     border-radius: 20px;
-    margin-right: 15px;
+    margin-right: 20px;
+    padding: 30px;
 }
 
 .title-populaire {
@@ -263,6 +263,7 @@ h2 {
 .text-populaire {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding-left: 10px;
     height: 100%;
 }
@@ -294,7 +295,6 @@ h2 {
 }
 
 .hebergements {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -365,8 +365,11 @@ h4 {
 #activites {
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 15px;
     height: auto;
+}
+
+#activites h3 {
+    padding-left: 20px;
 }
 
 .acti-articles {
@@ -375,6 +378,7 @@ h4 {
     flex-wrap: wrap;
     height: 500px;
     margin-top: 20px;
+    padding-left: 20px;
 }
 
 .act1 {
@@ -442,7 +446,6 @@ h4 {
 
 
 footer {
-    width: 100%;
     height: 200px;
     background-color: #F2F2F2;
 }
@@ -453,7 +456,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-left: 30px;
+    padding-left: 30px;
     padding-top: 40px;
 }
 
@@ -520,14 +523,15 @@ h5 {
     }
 
     #heberge-cadre {
-        width: 100%;
+        width: 90%;
         background-color: white;
+        margin-right: 0;
     }
     
     .hebergements {
         display: flex;
         flex-direction: column;
-        width: 95%;
+        width: 100%%;
     }
 
     .hebergements article {
@@ -542,11 +546,14 @@ h5 {
     #activites {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: 1300px;
         margin-bottom: 80px;
-        padding-left: 20px;
         background-color: white;
+    }
+
+    #activites h3 {
+        padding-left: 50px;
     }
 
     .acti-articles {
@@ -554,6 +561,7 @@ h5 {
         flex-direction: column;
         flex-wrap: nowrap;
         width: 90%;
+        padding-left: 60px;
     }
 
     .act1, .act2, .act3, .act4, .act5 {
@@ -571,18 +579,17 @@ h5 {
     display: flex;
     justify-content: left;
     padding-bottom: 15px;
+
 }
 
     footer {
-        width: 100%;
         height: auto;
     }
 
     .footerr {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin-left: 20px;
+        padding-left: 60px;
     }
 
     .footert {
@@ -596,7 +603,6 @@ h5 {
 /* Responsive < 450px */
 
 @media all and (max-width: 450px) {
-
 
 
     header {
@@ -647,7 +653,7 @@ h5 {
 
     .top-menu li a:hover {
     color: #0065FC;
-}
+    }
 
     .search-toggle {
         display: flex;
@@ -684,24 +690,35 @@ h5 {
 
     .populaire {
         width: 100%;
-        margin-right: -5px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
     }
 
     .title-populaire {
-        margin-left: 50px;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 90%;
     }
 
     .article-populaire {
         width: 85%;
-        margin-left: 50px;
+        margin-left: 20px;
+    }
+
+    .text-populaire {
+        display: block;
+        padding-left: 120px;
     }
 
     #heberge-cadre {
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .hebergements {
-        margin-left: -20px;
+        margin-left: 20px;
     }
 
     .hebergements article {
@@ -709,11 +726,11 @@ h5 {
     }
 
     #heberge-cadre h3 {
-        margin-left: -15px;
+        margin-left: 20px;
     }
 
     .show-more {
-        margin-left: -10px;
+        margin-left: 20px;
     }
 
     #activites {
@@ -722,19 +739,21 @@ h5 {
     }
 
     #activites h3 {
-        margin-left: -10px;
+        padding-left: 30px;
     }
 
     .acti-articles{
         width: 85%;
-        margin-left: -10px;
+        padding-left: 30px;
     }
+
     .acti-articles h4 {
     width: 100%;
     display: flex;
     justify-content: left;
     padding-bottom: 15px;
     }
+
 
 }
 
