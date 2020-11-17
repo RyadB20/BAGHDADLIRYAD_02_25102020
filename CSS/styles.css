@@ -11,7 +11,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -76,10 +76,6 @@ header {
     border-color: #0065FC;
 }
 
-.subscribe:hover {
-    border-top: solid;
-    border-color: #0065FC;
-}
 
 .top-menu li a:hover {
     color: #0065FC;
@@ -287,7 +283,7 @@ h2 {
 /* Hébergements */
 
 
-.heberge-cadre {
+#heberge-cadre {
     background-color: #F2F2F2;
     width: 60%;
     padding-top: 30px;
@@ -366,7 +362,7 @@ h4 {
 
 /* Activités à Marseille */
 
-.activites {
+#activites {
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 15px;
@@ -507,36 +503,35 @@ h5 {
     }
 
     .populaire {
-        width: 90%;
+        width: 95%;
         margin-bottom: 30px;
         display: block;
-        padding-left: 80px;
         margin-right: 0;
+
         border-radius: 0;
     }
 
     .title-populaire {
-        margin-left: -5px;
+        margin-left: 30px;
     }
     
     .article-populaire {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
-    .heberge-cadre {
+    #heberge-cadre {
         width: 100%;
-        margin-left: 0;
         background-color: white;
     }
     
     .hebergements {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 95%;
     }
 
     .hebergements article {
-        width: 83%;
+        width: 95%;
         margin-bottom: 0px;
     }
 
@@ -544,12 +539,11 @@ h5 {
         margin-top: 25px;
     }
 
-    .activites {
+    #activites {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 1300px;
-        margin-left: 20px;
         margin-bottom: 80px;
         background-color: white;
     }
@@ -561,7 +555,7 @@ h5 {
     }
 
     .act1, .act2, .act3, .act4, .act5 {
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: 0px 0px 20px 0px;
     }
@@ -600,6 +594,8 @@ h5 {
 /* Responsive < 450px */
 
 @media all and (max-width: 450px) {
+
+
 
     header {
         display: flex;
@@ -692,8 +688,14 @@ h5 {
         margin-left: 15px;
     }
 
-    .heberge-cadre {
-        padding-left: 15px;
+    #heberge-cadre {
+        width: 100%;
+    }
+
+
+    #activites {
+        height: 1400px;
+        width: 100%;
     }
 
     .acti-articles h4 {
@@ -703,3 +705,4 @@ h5 {
     padding-bottom: 15px;
     }
 }
+
