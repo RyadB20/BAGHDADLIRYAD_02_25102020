@@ -531,7 +531,7 @@ h5 {
     .hebergements {
         display: flex;
         flex-direction: column;
-        width: 100%%;
+        width: 100%;
     }
 
     .hebergements article {
@@ -575,12 +575,11 @@ h5 {
     }
 
     .acti-articles h4 {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    padding-bottom: 15px;
-
-}
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        padding-bottom: 15px;
+    }
 
     footer {
         height: auto;
